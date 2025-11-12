@@ -15,3 +15,11 @@ function checkprime(num){
 }
 
 console.log(checkprime(num))
+
+//check even odd
+
+if(num%2==0){
+    console.log("Even")
+}else{
+    console.log("Odd")
+}
