@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            width: 250px;
+            border: 1px solid blue;
+            padding: 10px;
+            font-family: sans-serif;
+        }
+        .container > div > img {
+            width: 250px;
+            height: 300px;
+            border: 2px solid black;
+            object-fit: cover;
+        }
+        .content1 h4 {
+            color: gray;
+            margin-top: -10px;
+        }
+        .content3 {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        .content2 {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            height: auto;
+           
+        }
+        .price {
+            font-weight: bold;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .off {
+            color: green;
+            font-weight: bold;
+        }
+        .footer{
+            color: green;
+        }
+        .rating{
+            width: auto;
+            height: auto;
+            background-color: green;
+            padding: 2px;
+             padding-top: 2px;
+             padding-top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <img src="https://assets-jiocdn.ajio.com/medias/sys_master/root/20231123/hBMO/655f3cfeafa4cf41f59a36a5/-473Wx593H-469456967-rose-MODEL.jpg" alt="watch">
+        </div>
+
+        <div class="content1">
+            <h3>SAMSUNG Galaxy Watch6 LTE</h3>
+            <h4>Graphite Strap, 44mm</h4>
+        </div>
+        <div class="content2">
+            <span class="rating">4.3★</span>
+             <span class="review">(973)</span>
+             <!--<span class="imge"><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt=""></span>-->
+        </div>
+
+        <div class="content3">
+            <span class="price">₹18,000</span>
+            <span class="old-price">₹41,999</span>
+            <span class="off">54% off</span>
+        </div>
+        <div class="footer">
+        <h3>Bank Offer</h3>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
