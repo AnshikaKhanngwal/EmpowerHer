@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Management - Firebase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2>Add New Book</h2>
+      <form id="addBookForm">
+        <label>Title<input required id="title" type="text" placeholder="Book title" /></label>
+        <label>Author<input required id="author" type="text" placeholder="Author name" /></label>
+        <label>Price (INR)<input required id="price" type="number" placeholder="199" /></label>
+        <label>Image URL<input required id="image" type="text" placeholder="https://...jpg" /></label>
+        <button class="btn" type="submit">Add Book</button>
+      </form>
+
+      <hr />
+      <div style="font-size:13px;color:#6b7280">Utilities</div>
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button id="seedBtn" class="btn seed">Seed Dummy Data</button>
+        <button id="clearBtn" class="btn outline">Clear All</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="header">
+        <div>
+          <h1>Book Library</h1>
+          <div class="small">Realtime CRUD with Firebase Firestore</div>
+        </div>
+        <input id="search" class="search" placeholder="Search title or author..." />
+      </div>
+
+      <div id="booksWrap">
+        <div class="grid" id="grid"></div>
+        <div id="empty" class="empty" style="display:none">No books found. Add some from sidebar or use Seed.</div>
+      </div>
+    </main>
+  </div>
+
+  <div id="modalRoot" style="display:none"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
