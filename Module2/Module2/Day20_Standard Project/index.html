@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <script type="module">
+        import { navbar } from "./components/navbar.js";
+        import { footer } from "./components/footer.js";
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("navbar").innerHTML = navbar();
+            document.getElementById("footer").innerHTML = footer();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <h1>Welcome to Home Page</h1>
+
+    <div id="footer"></div>
+</body>
+</html>

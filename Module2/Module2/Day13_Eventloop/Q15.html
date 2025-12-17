@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+let time = parseInt(prompt("Enter seconds for countdown:"));
+
+let intervalId;
+
+
+function startCountdown() {
+  intervalId = setInterval(() => {
+    console.log("Time left:", time);
+
+    if (time <= 0) {
+      clearInterval(intervalId);
+      console.log("Countdown Complete!");
+    }
+
+    time--;
+  }, 1000);
+}
+
+
+startCountdown();
+
+
+setTimeout(() => {
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "s") {      
+      clearInterval(intervalId);
+      console.log("Countdown Stopped by User!");
+    }
+  });
+}, 1000); 
+
+
+</script>
+</html>
